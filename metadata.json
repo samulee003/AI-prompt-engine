@@ -1,0 +1,6 @@
+{
+  "name": "AI Prompt Enhancer (Prompting Guide 101)",
+  "description": "An application to help users refine their initial AI prompt ideas into more effective and well-structured prompts, inspired by 'Prompting Guide 101' principles. Uses Gemini API for enhancement.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

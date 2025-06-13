@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Prompt Enhancer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@19.0.0",
+          "react/": "https://esm.sh/react@19.0.0/",
+          "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+          "@google/genai": "https://esm.sh/@google/genai@^1.4.0"
+        }
+      }
+    </script>
+    <script>
+      // Simulate process.env.API_KEY for client-side warning logic.
+      // In a real build setup (like Vite/CRA), this would be handled by environment variables
+      // (e.g., import.meta.env.VITE_API_KEY or process.env.REACT_APP_API_KEY).
+      // For this sandboxed environment, we'll manually set it or leave it undefined to test the warning.
+      // To test the "API Key Missing" warning, comment out the line below or set it to undefined/null.
+      // IMPORTANT: This is for DEMONSTRATION of the UI warning ONLY.
+      // Actual API calls in a production app should secure the API key on a backend.
+      // process = { env: { API_KEY: "YOUR_SIMULATED_API_KEY_FOR_TESTING_WARNING_UI" } }; // or undefined
+      process = { env: { API_KEY: undefined } }; // Default to undefined to show warning initially
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body class="bg-gradient-to-br from-slate-900 to-slate-800 text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
